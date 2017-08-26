@@ -71,8 +71,8 @@ public class Configurations {
         Properties properties = new Properties();
         properties.put("hibernate.dialect", environment.getRequiredProperty("hibernate.dialect"));
         properties.put("hibernate.hbm2ddl.auto", environment.getRequiredProperty("hibernate.hbm2ddl.method"));
-        properties.put("hibernate.show_sql", environment.getRequiredProperty("hibernate.show_sql"));
-        properties.put("hibernate.format_sql", environment.getRequiredProperty("hibernate.format_sql"));
+        properties.put("hibernate.show_sql", environment.getProperty("hibernate.show_sql", "false"));
+        properties.put("hibernate.format_sql", environment.getProperty("hibernate.format_sql", "false"));
         return properties;
     }
 }
