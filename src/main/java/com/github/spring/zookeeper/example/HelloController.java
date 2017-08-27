@@ -22,6 +22,6 @@ public class HelloController {
     @RequestMapping("/")
     public String index() throws InterruptedException {
         log.info("Greetings from {}", name);
-        return "Welcome here from author -  " + name + "!";
+        return "Welcome here from author - " + name + "!";
     }
 }
