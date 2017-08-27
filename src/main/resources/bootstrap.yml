@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: testapp
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
